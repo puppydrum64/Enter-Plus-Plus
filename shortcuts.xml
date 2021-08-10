@@ -1,0 +1,20 @@
+The generic shortcuts.xml file in Notepad++ looks like this:
+
+<NotepadPlus>
+    <InternalCommands>
+    </InternalCommands>
+    <Macros>
+      // insert macro here!
+    </Macros>
+    <UserDefinedCommands />
+    <PluginCommands />
+    <ScintillaKeys />
+</NotepadPlus>
+
+Copy and paste the following where it says // insert macro here!
+
+        <Macro name="Enter++" Ctrl="yes" Alt="no" Shift="no" Key="13">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam=";" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="&#x000D;" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="&#x000A;" />
+        </Macro>
